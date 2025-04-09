@@ -1,0 +1,6 @@
+vim.keymap.set("n", "<leader>sg", function()
+  vscode.action("grepc.webview.local.focus")
+end)
+vim.keymap.set("n", "<leader>sG", function()
+  vscode.action("grepc.webview.global.focus")
+end)

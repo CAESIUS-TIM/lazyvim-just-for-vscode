@@ -1,0 +1,43 @@
+-- Move Editor
+vim.keymap.set("n", "<C-w><C-h>", function()
+  vscode.action("workbench.action.moveEditorToLeftGroup")
+end)
+vim.keymap.set("n", "<C-w><C-j>", function()
+  vscode.action("workbench.action.moveEditorToBelowGroup")
+end)
+vim.keymap.set("n", "<C-w><C-k>", function()
+  vscode.action("workbench.action.moveEditorToAboveGroup")
+end)
+vim.keymap.set("n", "<C-w><C-l>", function()
+  vscode.action("workbench.action.moveEditorToRightGroup")
+end)
+
+-- Navigate
+vim.keymap.set("n", "<C-h>", function()
+  vscode.action("workbench.action.navigateLeft")
+end)
+vim.keymap.set("n", "<C-j>", function()
+  vscode.action("workbench.action.navigateDown")
+end)
+vim.keymap.set("n", "<C-k>", function()
+  vscode.action("workbench.action.navigateUp")
+end)
+vim.keymap.set("n", "<C-l>", function()
+  vscode.action("workbench.action.navigateRight")
+end)
+
+-- Zoom
+vim.keymap.set("n", "<leader>wm", function()
+  vscode.action("workbench.action.toggleEditorWidths")
+end)
+vim.keymap.set("n", "<leader>wz", function()
+  vscode.action("workbench.action.toggleZenMode")
+end)
+vim.keymap.set("n", "<leader>wq", function()
+  vscode.action("workbench.action.closeActiveEditor")
+end)
+
+-- Split
+vim.keymap.set("n", "<leader>-", "<C-W>s", { desc = "Split Window Below", remap = true })
+-- vim.keymap.set("n", "<leader>|", "<C-W>v", { desc = "Split Window Right", remap = true })
+vim.keymap.set("n", "<leader>\\", "<C-W>v", { desc = "Split Window Right", remap = true })

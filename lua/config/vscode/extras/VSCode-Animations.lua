@@ -1,0 +1,6 @@
+vim.keymap.set("n", "<leader>ua", function()
+  vscode.action("VSCode-Animations.enableAnimations")
+end)
+vim.keymap.set("n", "<leader>uA", function()
+  vscode.action("VSCode-Animations.disableAnimations")
+end)

@@ -1,0 +1,6 @@
+vim.keymap.set("n", "<leader>xt", function()
+  vscode.action("todo-tree-view.focus")
+end)
+vim.keymap.set("n", "<leader>st", function()
+  vscode.action("todo-tree-view.focus")
+end)

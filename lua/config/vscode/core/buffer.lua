@@ -1,0 +1,62 @@
+-- ## buffer
+-- 0. new
+-- 1. navigte
+-- 2. move
+-- 3. close
+-- 4. misc
+-- ### buffer.new
+vim.keymap.set("n", "<leader>bn", function()
+  vscode.action("workbench.action.files.newUntitledFile")
+end)
+-- ### buffer.navigte
+vim.keymap.set("n", "<leader>bb", function()
+  vscode.action("workbench.action.quickOpenLeastRecentlyUsedEditor")
+end)
+vim.keymap.set("n", "<leader>`", function()
+  vscode.action("workbench.action.quickOpenLeastRecentlyUsedEditor")
+end)
+vim.keymap.set("n", "]b", function()
+  vscode.action("workbench.action.nextEditorInGroup")
+end)
+vim.keymap.set("n", "[b", function()
+  vscode.action("workbench.action.previousEditorInGroup")
+end)
+vim.keymap.set("n", "L", function()
+  vscode.action("workbench.action.nextEditorInGroup")
+end)
+vim.keymap.set("n", "H", function()
+  vscode.action("workbench.action.previousEditorInGroup")
+end)
+vim.keymap.set("n", "<leader>be", function()
+  vscode.action("workbench.files.action.focusOpenEditorsView")
+end)
+-- ### buffer.move
+vim.keymap.set("n", "]B", function()
+  vscode.action("workbench.action.moveEditorRightInGroup")
+end)
+vim.keymap.set("n", "[B", function()
+  vscode.action("workbench.action.moveEditorLeftInGroup")
+end)
+-- ### buffer.close
+vim.keymap.set("n", "<leader>bd", function()
+  vscode.action("workbench.action.closeActiveEditor")
+end)
+vim.keymap.set("n", "<leader>bo", function()
+  vscode.action("workbench.action.closeOtherEditors")
+end)
+vim.keymap.set("n", "<leader>bD", function()
+  vscode.action("workbench.action.closeEditorsAndGroup")
+end)
+vim.keymap.set("n", "<leader>br", function()
+  vscode.action("workbench.action.closeEditorsToTheRight")
+end)
+vim.keymap.set("n", "<leader>bl", function()
+  vscode.action("workbench.action.closeEditorsToTheLeft")
+end)
+-- ### buffer.misc
+vim.keymap.set("n", "<leader>bp", function()
+  vscode.action("workbench.action.pinEditor")
+end)
+vim.keymap.set("n", "<leader>bP", function()
+  vscode.action("workbench.action.unpinEditor")
+end)
