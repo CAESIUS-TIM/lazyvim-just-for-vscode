@@ -3,5 +3,5 @@ if vim.g.vscode then
 end
 require("config.lazy")
 require("config.options")
-require("config.keymap")
+require("config.keymaps")
 require("config.autocmds")
